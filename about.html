@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Chiwon Lee</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="images/profile.jpg" alt="Chiwon Lee">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Portfolio</a>
+      <a href="experiments.html">Experiments</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-menu').classList.toggle('open'); this.classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-menu">
+    <a href="index.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">Portfolio</a>
+    <a href="experiments.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">Experiments</a>
+    <a href="about.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">About</a>
+    <a href="contact.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">Contact</a>
+  </div>
+
+  <!-- Floating Squares -->
+  <div class="floating-squares" id="squares"></div>
+
+  <!-- Page Content -->
+  <div class="page-content">
+
+    <!-- Hero -->
+    <section class="about-hero">
+      <h1>Hi, I'm Chiwon<br><strong>an award-winning product designer that enjoys solving complex problems into seamless user experiences</strong></h1>
+    </section>
+
+    <!-- Photo -->
+    <div class="about-photo">
+      <img src="images/chiwon-about.jpg" alt="Chiwon Lee">
+    </div>
+
+    <!-- About Me -->
+    <section class="about-section">
+      <h2>About me</h2>
+      <p>I'm a passionate product designer with end-to-end product design experience, particularly in the realm of emerging technology.</p>
+      <p>My journey into UX design began after an inspiring tech conference, igniting a lifelong love for creating intuitive and impactful user experiences.</p>
+      <p>My design work has been showcased at top international design awards such as the Red Dot Design Award and the A' Design Award. Additionally, my design research has been presented at the #1 academic conference for Human-Computer Interaction (HCI) like CHI, highlighting my commitment to advancing the field through innovative research and practical applications.</p>
+      <p>I'm open to discussing design opportunities and potential collaborations. Please feel free to reach out via email.</p>
+      <div class="about-links">
+        <a href="https://drive.google.com/file/d/1W_RoePXsQ4lzOvL7vN10jx4TA3mRvMma/view?usp=sharing" target="_blank">Resume</a>
+        <a href="https://www.linkedin.com/in/chiwon/" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="about-section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <h4>Product design</h4>
+          <p>I'm proficient in Figma and translating ideas to intuitive user experiences. My product design work has been featured at the top international design awards.</p>
+        </div>
+        <div class="skill-item">
+          <h4>User research</h4>
+          <p>I have a master's degree in human-centered design from MIT and research experience from the MIT Media Lab. I enjoy learning about the user to provide the best experience possible.</p>
+        </div>
+        <div class="skill-item">
+          <h4>Website development</h4>
+          <p>I have built responsive websites for various clients before including an ed-tech company in Zimbabwe. I understand HTML, CSS, and use can use a variety of platforms to create seamless websites.</p>
+        </div>
+        <div class="skill-item">
+          <h4>Branding</h4>
+          <p>I have been involved in branding during my time at LG International and have designed logos and brand identities for a variety of clients in the past.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      &copy; Chiwon Lee's Portfolio
+    </footer>
+
+  </div>
+
+  <script src="js/particles.js"></script>
+
+</body>
+</html>

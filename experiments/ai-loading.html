@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Loading Interactions — Chiwon Lee</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .particle-demo {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #ffffff;
+      margin: 32px 0 8px;
+      border: 1px solid #eee;
+    }
+
+    .particle-demo .demo-header {
+      text-align: center;
+      padding: 20px 24px 4px;
+    }
+
+    .particle-demo .demo-header h3 {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 4px;
+    }
+
+    .particle-demo .demo-header h4 {
+      font-size: 18px;
+      font-weight: 300;
+      color: #1a1a1a;
+      letter-spacing: -0.5px;
+    }
+
+    .particle-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      padding: 8px 32px 20px;
+      max-width: 100%;
+    }
+
+    .particle-card {
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      position: relative;
+      border-right: 1px solid #e8e8e8;
+      overflow: hidden;
+    }
+
+    .particle-card:last-child {
+      border-right: none;
+    }
+
+    .particle-card .card-label {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #bbb;
+      align-self: flex-start;
+    }
+
+    .particle-card .card-title {
+      font-size: 12px;
+      font-weight: 400;
+      color: #999;
+    }
+
+    .canvas-wrap {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .canvas-wrap canvas {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .particle-grid {
+        grid-template-columns: 1fr;
+        padding: 8px 16px 20px;
+      }
+      .particle-card {
+        border-right: none;
+        border-bottom: 1px solid #e8e8e8;
+        padding: 16px;
+      }
+      .particle-card:last-child {
+        border-bottom: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="../index.html" class="nav-logo">
+      <img src="../images/profile.jpg" alt="Chiwon Lee">
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">Portfolio</a>
+      <a href="../experiments.html">Experiments</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-menu').classList.toggle('open'); this.classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-menu">
+    <a href="../index.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">Portfolio</a>
+    <a href="../experiments.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">Experiments</a>
+    <a href="../about.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">About</a>
+    <a href="../contact.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">Contact</a>
+  </div>
+
+  <!-- Page Content -->
+  <div class="page-content">
+    <article class="case-study">
+
+      <!-- Title & Meta -->
+      <h1 class="cs-title">Particle Explorations: AI Loading Interactions</h1>
+      <div class="cs-meta">
+        <span>Workday</span>
+        <span class="sep">|</span>
+        <span>R&D, AI Interaction Design</span>
+        <span class="sep">|</span>
+        <span>2026</span>
+        <span class="sep">|</span>
+        <span>Lead Product Designer</span>
+      </div>
+
+      <!-- Overview -->
+      <section class="cs-section">
+        <h2 class="cs-section-title">Overview</h2>
+
+        <h3 class="cs-subsection-title">Product</h3>
+        <p class="cs-text">Visualizing Agentic Thinking to Justify Premium Consumption — a series of 3D particle micro-interactions designed to transform AI processing latency into a trust-building transparency moment.</p>
+
+        <h3 class="cs-subsection-title">My roles and responsibilities</h3>
+        <p class="cs-text">Lead Product Designer — R&D / AI Interaction Design</p>
+
+        <h3 class="cs-subsection-title">Tools</h3>
+        <p class="cs-text">Spline, Omma, Evisort Design System (EDS)</p>
+
+        <h3 class="cs-subsection-title">Timeline</h3>
+        <p class="cs-text">February 2026 – April 2026 (3 months)</p>
+      </section>
+
+      <hr class="cs-divider">
+
+      <!-- Background -->
+      <section class="cs-section">
+        <h2 class="cs-section-title">Background</h2>
+
+        <h3 class="cs-subsection-title">The Strategy</h3>
+        <p class="cs-text">In a $50 per run consumption model, latency during complex AI document ingestion can erode perceived value. I developed a series of Particle Explorations — Neural Pulse, Thought Orbit, and Gravity Well — to transform dead air into a state-of-the-art trust-building transparency moment.</p>
+      </section>
+
+      <hr class="cs-divider">
+
+      <!-- Key Implementation -->
+      <section class="cs-section">
+        <h2 class="cs-section-title">Key Implementation</h2>
+
+        <ul class="cs-bullet-list">
+          <li><strong>Trust Architecture:</strong> Designed spatial particle systems that visualize non-deterministic AI states and shift the user mental model from "loading" to "active data processing."</li>
+          <li><strong>Technical ROI:</strong> Leveraged the $25,000 Spline partnership to deliver code-connected components that react to real-time LLM progress props.</li>
+          <li><strong>Systemic Scaling:</strong> Codified these interactions into the Evisort AI Design System to enable all product squads to deploy high-fidelity feedback loops via the AI Prototyping TF pipeline.</li>
+        </ul>
+      </section>
+
+      <hr class="cs-divider">
+
+      <!-- Live Demo -->
+      <section class="cs-section">
+        <h2 class="cs-section-title">Live Particle Explorations</h2>
+        <p class="cs-text">Neural Pulse, Thought Orbit, and Gravity Well are 3D micro-interactions designed to provide spatial feedback during agentic latency.</p>
+
+        <div class="particle-demo">
+          <div class="demo-header">
+            <h3>Particle Explorations</h3>
+            <h4>AI Loading Interactions</h4>
+          </div>
+
+          <div class="particle-grid">
+            <div class="particle-card">
+              <span class="card-label">01</span>
+              <div class="canvas-wrap"><canvas id="c1" width="260" height="240"></canvas></div>
+              <span class="card-title">Neural Pulse</span>
+            </div>
+            <div class="particle-card">
+              <span class="card-label">02</span>
+              <div class="canvas-wrap"><canvas id="c2" width="260" height="240"></canvas></div>
+              <span class="card-title">Thought Orbit</span>
+            </div>
+            <div class="particle-card">
+              <span class="card-label">03</span>
+              <div class="canvas-wrap"><canvas id="c3" width="260" height="240"></canvas></div>
+              <span class="card-title">Gravity Well</span>
+            </div>
+          </div>
+        </div>
+        <p class="cs-caption">Live interactive demo: Three particle systems visualizing different stages of AI document processing.</p>
+      </section>
+
+      <hr class="cs-divider">
+
+      <!-- Impact -->
+      <section class="cs-section">
+        <h2 class="cs-section-title">The Impact</h2>
+
+        <p class="cs-text">By making black-box processing visible, these interactions justify premium pricing and establish a new global standard for human-in-the-loop feedback across the Workday ecosystem.</p>
+
+        <div class="cs-impact-grid">
+          <div class="cs-impact-card">
+            <p class="label">Trust Architecture</p>
+            <p class="value">Shifted user mental model from passive "loading" to active "data processing"</p>
+          </div>
+          <div class="cs-impact-card">
+            <p class="label">Premium Justification</p>
+            <p class="value">Transformed latency into a value-signaling moment for the $50/run consumption model</p>
+          </div>
+          <div class="cs-impact-card">
+            <p class="label">Systemic Standard</p>
+            <p class="value">Codified into the Evisort AI Design System for all product squads</p>
+          </div>
+          <div class="cs-impact-card">
+            <p class="label">Technical ROI</p>
+            <p class="value">Code-connected components react to real-time LLM progress props via Spline partnership</p>
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+      &copy; Chiwon Lee's Portfolio
+    </footer>
+
+  </div>
+
+  <script>
+  // ─── Utility ──────────────────────────────────
+  function getCtx(id) {
+    var c = document.getElementById(id);
+    var wrap = c.parentElement;
+    var maxW = wrap.clientWidth;
+    var maxH = wrap.clientHeight;
+    var size = Math.min(maxW, maxH, 260);
+    c.style.width = size + 'px';
+    c.style.height = size + 'px';
+    var dpr = window.devicePixelRatio || 1;
+    c.width = size * dpr;
+    c.height = size * dpr;
+    var ctx = c.getContext('2d');
+    ctx.scale(dpr, dpr);
+    return { ctx: ctx, w: size, h: size };
+  }
+
+  // ─── Nucleus Drawing Helper ────────────────────
+  function drawNucleus(ctx, x, y, t, baseHue, opts) {
+    opts = opts || {};
+    var coreRadius = opts.coreRadius || 5;
+    var glowRadius = opts.glowRadius || 22;
+    var glowAlpha = opts.glowAlpha || 0.18;
+    var pulseSpeed = opts.pulseSpeed || 0.003;
+    var pulseAmt = opts.pulseAmt || 0.2;
+    var innerParticles = opts.innerParticles || 12;
+    var innerRadius = opts.innerRadius || 10;
+
+    var pulse = 1 + Math.sin(t * pulseSpeed) * pulseAmt;
+    var circleR = coreRadius * pulse;
+
+    var g2 = ctx.createRadialGradient(x, y, 0, x, y, glowRadius * pulse * 1.5);
+    g2.addColorStop(0, 'hsla(' + baseHue + ', 60%, 50%, ' + (glowAlpha * 0.6) + ')');
+    g2.addColorStop(1, 'hsla(' + baseHue + ', 60%, 50%, 0)');
+    ctx.beginPath();
+    ctx.arc(x, y, glowRadius * pulse * 1.5, 0, Math.PI * 2);
+    ctx.fillStyle = g2;
+    ctx.fill();
+
+    var g1 = ctx.createRadialGradient(x, y, 0, x, y, glowRadius * pulse);
+    g1.addColorStop(0, 'hsla(' + baseHue + ', 70%, 55%, ' + glowAlpha + ')');
+    g1.addColorStop(1, 'hsla(' + baseHue + ', 70%, 55%, 0)');
+    ctx.beginPath();
+    ctx.arc(x, y, glowRadius * pulse, 0, Math.PI * 2);
+    ctx.fillStyle = g1;
+    ctx.fill();
+
+    for (var i = 0; i < innerParticles; i++) {
+      var a = (i / innerParticles) * Math.PI * 2 + t * 0.004 * (i % 2 === 0 ? 1 : -1);
+      var r = innerRadius * (0.4 + Math.sin(t * 0.005 + i * 1.3) * 0.3) * pulse;
+      var px = x + Math.cos(a) * r;
+      var py = y + Math.sin(a) * r;
+      var s = 1 + Math.sin(t * 0.006 + i) * 0.5;
+      var alpha = 0.4 + Math.sin(t * 0.004 + i * 0.8) * 0.25;
+      ctx.beginPath();
+      ctx.arc(px, py, s, 0, Math.PI * 2);
+      ctx.fillStyle = 'hsla(' + (baseHue + 20) + ', 60%, 65%, ' + alpha + ')';
+      ctx.fill();
+    }
+
+    var circles = [
+      { hueShift: -15, lum: 50 },
+      { hueShift: 0, lum: 55 },
+      { hueShift: 15, lum: 48 }
+    ];
+
+    ctx.globalCompositeOperation = 'source-over';
+    var circleAlpha = 0.35;
+    for (var ci = 0; ci < circles.length; ci++) {
+      var c = circles[ci];
+      ctx.beginPath();
+      ctx.arc(x, y, circleR, 0, Math.PI * 2);
+      ctx.fillStyle = 'hsla(' + (baseHue + c.hueShift) + ', 55%, ' + c.lum + '%, ' + circleAlpha + ')';
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(x, y, circleR, 0, Math.PI * 2);
+      ctx.strokeStyle = 'hsla(' + (baseHue + c.hueShift) + ', 45%, ' + c.lum + '%, ' + (circleAlpha * 0.6) + ')';
+      ctx.lineWidth = 0.8;
+      ctx.stroke();
+    }
+
+    var hlGrad = ctx.createRadialGradient(x, y, 0, x, y, circleR * 0.5);
+    hlGrad.addColorStop(0, 'hsla(' + baseHue + ', 40%, 85%, 0.45)');
+    hlGrad.addColorStop(1, 'hsla(' + baseHue + ', 40%, 85%, 0)');
+    ctx.beginPath();
+    ctx.arc(x, y, circleR * 0.5, 0, Math.PI * 2);
+    ctx.fillStyle = hlGrad;
+    ctx.fill();
+  }
+
+  // ─── 01 Neural Pulse ──────────────────────────
+  (function() {
+    var d = getCtx('c1');
+    var ctx = d.ctx, w = d.w, h = d.h;
+    var cx = w / 2, cy = h / 2;
+    var particles = [];
+    for (var i = 0; i < 90; i++) {
+      var angle = Math.random() * Math.PI * 2;
+      particles.push({
+        baseR: 22 + Math.random() * 55, angle: angle,
+        speed: 0.3 + Math.random() * 0.7, size: 1 + Math.random() * 2,
+        phase: Math.random() * Math.PI * 2, hue: 215 + Math.random() * 30
+      });
+    }
+    function draw(t) {
+      ctx.clearRect(0, 0, w, h);
+      var pulse = Math.sin(t * 0.002) * 0.35 + 1;
+      for (var i = 0; i < particles.length; i++) {
+        var p = particles[i];
+        var r = p.baseR * pulse + Math.sin(t * 0.003 + p.phase) * 12;
+        var a = p.angle + t * 0.0004 * p.speed;
+        var x = cx + Math.cos(a) * r;
+        var y = cy + Math.sin(a) * r;
+        if (r < 45 * pulse) {
+          ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(x, y);
+          ctx.strokeStyle = 'hsla(' + p.hue + ', 40%, 55%, 0.04)';
+          ctx.lineWidth = 0.5; ctx.stroke();
+        }
+      }
+      for (var i = 0; i < particles.length; i++) {
+        var p = particles[i];
+        var r = p.baseR * pulse + Math.sin(t * 0.003 + p.phase) * 12;
+        var a = p.angle + t * 0.0004 * p.speed;
+        var x = cx + Math.cos(a) * r;
+        var y = cy + Math.sin(a) * r;
+        var alpha = 0.25 + Math.sin(t * 0.004 + p.phase) * 0.2;
+        ctx.beginPath(); ctx.arc(x, y, p.size, 0, Math.PI * 2);
+        ctx.fillStyle = 'hsla(' + p.hue + ', 55%, 55%, ' + alpha + ')';
+        ctx.fill();
+      }
+      drawNucleus(ctx, cx, cy, t, 225, {
+        coreRadius: 21, glowRadius: 78, coreAlpha: 0.85, glowAlpha: 0.18,
+        innerParticles: 20, innerRadius: 33, pulseSpeed: 0.002, pulseAmt: 0.15
+      });
+      requestAnimationFrame(draw);
+    }
+    requestAnimationFrame(draw);
+  })();
+
+  // ─── 02 Thought Orbit ─────────────────────────
+  (function() {
+    var d = getCtx('c2');
+    var ctx = d.ctx, w = d.w, h = d.h;
+    var cx = w / 2, cy = h / 2;
+    var rings = [
+      { count: 24, radius: 32, speed: 1.2, dotSize: 1.8, hue: 250 },
+      { count: 36, radius: 55, speed: -0.8, dotSize: 1.5, hue: 265 },
+      { count: 48, radius: 78, speed: 0.5, dotSize: 1.2, hue: 280 }
+    ];
+    function draw(t) {
+      ctx.clearRect(0, 0, w, h);
+      for (var ri = 0; ri < rings.length; ri++) {
+        var ring = rings[ri];
+        ctx.beginPath(); ctx.arc(cx, cy, ring.radius, 0, Math.PI * 2);
+        ctx.strokeStyle = 'hsla(' + ring.hue + ', 20%, 70%, 0.06)';
+        ctx.lineWidth = 0.5; ctx.stroke();
+      }
+      for (var ri = 0; ri < rings.length; ri++) {
+        var ring = rings[ri];
+        for (var i = 0; i < ring.count; i++) {
+          var a = (i / ring.count) * Math.PI * 2 + t * 0.001 * ring.speed;
+          var wobble = Math.sin(t * 0.003 + i) * 3;
+          var x = cx + Math.cos(a) * (ring.radius + wobble);
+          var y = cy + Math.sin(a) * (ring.radius + wobble);
+          var alpha = 0.2 + Math.sin(t * 0.005 + i * 0.5) * 0.3;
+          if (i % 6 === 0) {
+            ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(x, y);
+            ctx.strokeStyle = 'hsla(' + ring.hue + ', 30%, 60%, 0.03)';
+            ctx.lineWidth = 0.5; ctx.stroke();
+          }
+          ctx.beginPath(); ctx.arc(x, y, ring.dotSize, 0, Math.PI * 2);
+          ctx.fillStyle = 'hsla(' + ring.hue + ', 50%, 55%, ' + Math.max(0.1, alpha) + ')';
+          ctx.fill();
+        }
+      }
+      ctx.lineWidth = 0.3;
+      for (var i = 0; i < 6; i++) {
+        var a = t * 0.001 + (i / 6) * Math.PI * 2;
+        ctx.beginPath();
+        ctx.moveTo(cx + Math.cos(a) * 32, cy + Math.sin(a) * 32);
+        ctx.lineTo(cx + Math.cos(-a * 0.7) * 78, cy + Math.sin(-a * 0.7) * 78);
+        ctx.strokeStyle = 'rgba(140, 130, 200, 0.03)'; ctx.stroke();
+      }
+      drawNucleus(ctx, cx, cy, t, 258, {
+        coreRadius: 19.5, glowRadius: 72, coreAlpha: 0.85, glowAlpha: 0.16,
+        innerParticles: 18, innerRadius: 30, pulseSpeed: 0.0025, pulseAmt: 0.18
+      });
+      requestAnimationFrame(draw);
+    }
+    requestAnimationFrame(draw);
+  })();
+
+  // ─── 03 Gravity Well ──────────────────────────
+  (function() {
+    var d = getCtx('c3');
+    var ctx = d.ctx, w = d.w, h = d.h;
+    var cx = w / 2, cy = h / 2;
+    var particles = [];
+    for (var i = 0; i < 100; i++) {
+      var a = Math.random() * Math.PI * 2;
+      var r = 30 + Math.random() * 65;
+      particles.push({
+        x: cx + Math.cos(a) * r, y: cy + Math.sin(a) * r,
+        vx: Math.cos(a + Math.PI / 2) * (0.8 + Math.random() * 0.8),
+        vy: Math.sin(a + Math.PI / 2) * (0.8 + Math.random() * 0.8),
+        size: 0.8 + Math.random() * 1.8, trail: []
+      });
+    }
+    function draw(t) {
+      ctx.clearRect(0, 0, w, h);
+      var pullX = cx + Math.sin(t * 0.0008) * 8;
+      var pullY = cy + Math.cos(t * 0.001) * 6;
+      for (var i = 0; i < particles.length; i++) {
+        var p = particles[i];
+        var dx = pullX - p.x, dy = pullY - p.y;
+        var dist = Math.max(Math.hypot(dx, dy), 5);
+        var force = 60 / (dist * dist);
+        p.vx += (dx / dist) * force; p.vy += (dy / dist) * force;
+        p.vx *= 0.985; p.vy *= 0.985;
+        p.x += p.vx; p.y += p.vy;
+        p.trail.push({ x: p.x, y: p.y });
+        if (p.trail.length > 6) p.trail.shift();
+        if (dist < 10) {
+          var a = Math.random() * Math.PI * 2;
+          var r = 40 + Math.random() * 55;
+          p.x = cx + Math.cos(a) * r; p.y = cy + Math.sin(a) * r;
+          p.vx = Math.cos(a + Math.PI / 2) * 1.2;
+          p.vy = Math.sin(a + Math.PI / 2) * 1.2;
+          p.trail = [];
+        }
+        for (var j = 0; j < p.trail.length - 1; j++) {
+          var talpha = (j / p.trail.length) * 0.12;
+          ctx.beginPath(); ctx.arc(p.trail[j].x, p.trail[j].y, p.size * 0.6, 0, Math.PI * 2);
+          ctx.fillStyle = 'hsla(250, 40%, 55%, ' + talpha + ')'; ctx.fill();
+        }
+        var speed = Math.hypot(p.vx, p.vy);
+        var hue = 240 + speed * 12;
+        var alpha = 0.3 + Math.min(speed * 0.12, 0.4);
+        ctx.beginPath(); ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fillStyle = 'hsla(' + hue + ', 45%, 50%, ' + alpha + ')'; ctx.fill();
+      }
+      drawNucleus(ctx, pullX, pullY, t, 248, {
+        coreRadius: 19.5, glowRadius: 75, coreAlpha: 0.8, glowAlpha: 0.16,
+        innerParticles: 18, innerRadius: 30, pulseSpeed: 0.003, pulseAmt: 0.2
+      });
+      requestAnimationFrame(draw);
+    }
+    requestAnimationFrame(draw);
+  })();
+  </script>
+
+</body>
+</html>

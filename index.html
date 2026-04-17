@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chiwon Lee's Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="images/profile.jpg" alt="Chiwon Lee">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Portfolio</a>
+      <a href="experiments.html">Experiments</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-menu').classList.toggle('open'); this.classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-menu">
+    <a href="index.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">Portfolio</a>
+    <a href="experiments.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">Experiments</a>
+    <a href="about.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">About</a>
+    <a href="contact.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">Contact</a>
+  </div>
+
+  <!-- Floating Squares -->
+  <div class="floating-squares" id="squares"></div>
+
+  <!-- Page Content -->
+  <div class="page-content">
+
+    <!-- Hero -->
+    <section class="home-hero">
+      <h1>Hi, I'm Chiwon<br><strong>an award-winning product designer</strong></h1>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+
+      <!-- CNA -->
+      <a href="portfolio/cna.html" class="project-card">
+        <div class="project-card-image" style="background: #f0f3ff;">
+          <img src="images/review_results.png" alt="Contract Negotiation Agent — AI-powered contract review">
+        </div>
+        <h2>Establishing the design framework for autonomous legal review</h2>
+        <p class="project-meta">Workday | Agentic AI, B2B SaaS, Web | 2025–2026</p>
+      </a>
+
+      <!-- AI Prototyping TF -->
+      <a href="portfolio/ai-prototyping.html" class="project-card">
+        <div class="project-card-image" style="background: #e8f5e9;">
+          <img src="images/ai_proto_1.png" alt="AI Prototyping Task Force — Engineering Agentic Design Ops">
+        </div>
+        <h2>Founding the AI Prototyping TF: Engineering Agentic Design Ops</h2>
+        <p class="project-meta">Workday | AI Design Ops, B2B SaaS | 2026</p>
+      </a>
+
+      <!-- WRA -->
+      <a href="portfolio/wra.html" class="project-card">
+        <div class="project-card-image" style="background: #dce4ff;">
+          <img src="images/wra_new_1.gif" alt="Workflow Routing Agent — Engineering the Legal Concierge">
+        </div>
+        <h2>Engineering the Legal "Concierge" for enterprise legal requests</h2>
+        <p class="project-meta">Workday | Agentic AI, B2B SaaS, Web | 2025</p>
+      </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      &copy; Chiwon Lee's Portfolio
+    </footer>
+
+  </div>
+
+  <script src="js/particles.js"></script>
+
+</body>
+</html>

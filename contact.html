@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Chiwon Lee</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="images/profile.jpg" alt="Chiwon Lee">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Portfolio</a>
+      <a href="experiments.html">Experiments</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-menu').classList.toggle('open'); this.classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-menu">
+    <a href="index.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">Portfolio</a>
+    <a href="experiments.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">Experiments</a>
+    <a href="about.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">About</a>
+    <a href="contact.html" onclick="document.querySelector('.nav-menu').classList.remove('open')">Contact</a>
+  </div>
+
+  <!-- Floating Squares -->
+  <div class="floating-squares" id="squares"></div>
+
+  <!-- Page Content -->
+  <div class="page-content">
+
+    <section class="contact-page">
+      <h1 class="contact-heading">Interested in talking?<br><strong>Feel free to email me or send a message</strong></h1>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <p class="contact-label">Email</p>
+          <h4 class="contact-value"><a href="mailto:chiwon.ace.lee@gmail.com">chiwon.ace.lee@gmail.com</a></h4>
+        </div>
+        <div class="contact-item">
+          <p class="contact-label">Location</p>
+          <h4 class="contact-value">Currently in the United States,<br>Eastern Standard Time (EST)</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      &copy; Chiwon Lee's Portfolio
+    </footer>
+
+  </div>
+
+  <script src="js/particles.js"></script>
+
+</body>
+</html>
