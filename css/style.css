@@ -2,7 +2,7 @@
    Chiwon Lee Portfolio — Global Styles
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 *, *::before, *::after {
   margin: 0;
@@ -83,6 +83,7 @@ img {
 
 .nav-links a {
   font-size: 15px;
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 500;
   color: #1a1a1a;
   transition: opacity 0.2s;
@@ -144,6 +145,7 @@ img {
 
 .nav-menu a {
   font-size: 32px;
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
   color: #1a1a1a;
   transition: opacity 0.2s;
@@ -208,6 +210,7 @@ img {
 
 .home-hero h1 {
   font-size: clamp(36px, 5.5vw, 56px);
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 300;
   line-height: 1.25;
   color: #c0c0c0;
@@ -231,6 +234,7 @@ img {
 
 .sub-hero h1 {
   font-size: clamp(28px, 3.5vw, 40px);
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 300;
   line-height: 1.25;
   color: #c0c0c0;
@@ -284,6 +288,7 @@ img {
 
 .project-card h2 {
   font-size: 24px;
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
   margin-bottom: 6px;
   line-height: 1.3;
@@ -305,26 +310,49 @@ img {
   margin: 0 auto;
 }
 
+.about-kicker {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d9dee6;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5f6b7a;
+}
+
 .about-hero h1 {
   font-size: clamp(28px, 3.5vw, 40px);
-  font-weight: 300;
-  line-height: 1.25;
-  color: #c0c0c0;
-  margin-bottom: 8px;
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #1a1a1a;
+  margin-bottom: 16px;
 }
 
 .about-hero h1 strong {
   font-weight: 500;
-  color: #1a1a1a;
+  color: #6f7a87;
+}
+
+.about-intro {
+  max-width: 760px;
+  font-size: 17px;
+  line-height: 1.85;
+  color: #4b5565;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .about-photo {
-  margin: 60px auto 0;
+  margin: 44px auto 0;
   max-width: 880px;
   padding: 0 40px;
-  border-radius: 16px;
+  border-radius: 0;
   overflow: hidden;
-  background: #f0f0f0;
+  background: #f4f1eb;
   aspect-ratio: 16 / 9;
   display: flex;
   align-items: center;
@@ -340,15 +368,18 @@ img {
 }
 
 .about-section {
-  padding: 64px 40px;
+  padding: 56px 40px;
   max-width: 960px;
   margin: 0 auto;
+  border-top: 1px solid #e5e7eb;
 }
 
 .about-section h2 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 24px;
+  font-size: 29px;
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 22px;
 }
 
 .about-section p {
@@ -361,13 +392,13 @@ img {
 .about-links {
   display: flex;
   gap: 16px;
-  margin-top: 24px;
+  margin-top: 30px;
 }
 
 .about-links a {
   display: inline-block;
-  padding: 10px 28px;
-  border: 1.5px solid #1a1a1a;
+  padding: 10px 24px;
+  border: 1px solid #1a1a1a;
   border-radius: 100px;
   font-size: 14px;
   font-weight: 600;
@@ -385,10 +416,30 @@ img {
   gap: 40px;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 28px;
+}
+
+.about-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7a8495;
+  padding-top: 4px;
+}
+
+.about-copy p:last-child {
+  margin-bottom: 0;
+}
+
 .skill-item h4 {
   font-size: 18px;
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .skill-item p {
@@ -617,6 +668,479 @@ img {
 }
 
 /* ============================================
+   Contract Negotiation Agent
+   ============================================ */
+
+.cna-hero {
+  padding: 0 0 36px;
+  border-bottom: none;
+}
+
+.cna-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5f6b7a;
+  margin-bottom: 18px;
+  border-bottom: none;
+}
+
+.cna-hero .cs-title,
+.cna-section-heading,
+.cna-screen-card h3 {
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 500;
+}
+
+.cna-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+  padding-top: 0;
+  border-top: none;
+}
+
+.cna-hero .cs-hero-image {
+  margin: 32px 0 36px;
+  padding-top: 0;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f8f8f8;
+}
+
+.cna-hero .cs-hero-image img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.cna-summary-card {
+  padding: 0 16px 0 0;
+  border-right: none;
+}
+
+.cna-summary-card:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.cna-summary-card .label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7a8495;
+  margin-bottom: 6px;
+}
+
+.cna-summary-card .value {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #1a1a1a;
+}
+
+.cna-overview-lines {
+  display: grid;
+  gap: 12px;
+  max-width: 760px;
+}
+
+.cna-overview-lines .cs-text:last-child {
+  margin-bottom: 0;
+}
+
+.cna-section {
+  padding-top: 8px;
+}
+
+.cna-section-heading {
+  font-size: 30px;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.cna-callout {
+  padding: 0 0 18px;
+  border-bottom: 1px solid #e5e7eb;
+  max-width: 760px;
+}
+
+.cna-metric-stack {
+  display: grid;
+  gap: 12px;
+}
+
+.cna-metric {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eef1f5;
+}
+
+.cna-metric:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.cna-metric-number {
+  min-width: 64px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #1a1a1a;
+}
+
+.cna-metric-text {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #4b5565;
+}
+
+.cna-problem-visual {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin-top: 28px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.cna-problem-stat {
+  padding: 24px 22px 22px 0;
+  border-right: none;
+}
+
+.cna-problem-stat:last-child {
+  padding-right: 0;
+}
+
+.cna-problem-number {
+  font-size: clamp(34px, 4vw, 48px);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  color: #7f2f2f;
+  margin-bottom: 12px;
+}
+
+.cna-problem-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.cna-problem-copy {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4b5565;
+  margin-bottom: 0;
+}
+
+.cna-impact-visual {
+  border-top: 1px solid #e5e7eb;
+}
+
+.cna-impact-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.cna-impact-number {
+  font-size: clamp(34px, 4vw, 48px);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.cna-impact-label {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #4b5565;
+  margin-bottom: 16px;
+}
+
+.cna-impact-story-item {
+  padding-right: 22px;
+  padding-top: 24px;
+}
+
+.cna-impact-story-item:last-child {
+  padding-right: 0;
+}
+
+.cna-impact-metric-block {
+  padding-bottom: 18px;
+}
+
+.cna-impact-copy-block {
+  padding-top: 18px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.cna-impact-story-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.cna-impact-story-copy {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4b5565;
+  margin-bottom: 0;
+}
+
+.cna-quote-list {
+  display: grid;
+  gap: 18px;
+}
+
+.cna-quote {
+  padding: 26px 28px;
+  border: 1px solid #e5e7eb;
+  background: transparent;
+}
+
+.cna-quote-text {
+  max-width: 860px;
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: clamp(20px, 2.1vw, 28px);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.03em;
+  color: #111827;
+  margin-bottom: 18px;
+}
+
+.cna-quote-mark {
+  display: inline;
+  padding: 0 0.08em;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 55%, rgba(245, 223, 77, 0.65) 55%);
+}
+
+.cna-quote-meta {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7a8495;
+}
+
+.cna-quote-context {
+  margin-top: 10px;
+  max-width: 720px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #5f6b7a;
+}
+
+.cna-work-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  column-gap: 28px;
+  row-gap: 18px;
+  border-top: none;
+}
+
+.cna-work-row {
+  display: contents;
+}
+
+.cna-work-label,
+.cna-work-body {
+  padding-top: 18px;
+  border-top: 1px solid #f0f2f5;
+}
+
+.cna-work-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.cna-work-body {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.cna-detail-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.cna-detail-list li {
+  margin-bottom: 6px;
+  line-height: 1.7;
+}
+
+.cna-detail-list li:last-child {
+  margin-bottom: 0;
+}
+
+.cna-decision-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 28px 0 8px;
+}
+
+.cna-decision-media-stacked {
+  grid-template-columns: 1fr;
+}
+
+.cna-decision-media-item .cs-image {
+  margin-top: 12px;
+}
+
+.cna-work-grid-continuation {
+  margin-top: 8px;
+}
+
+.cna-work-grid-continuation .cna-work-label:nth-child(1),
+.cna-work-grid-continuation .cna-work-body:nth-child(2) {
+  border-top: none;
+}
+
+.cna-work-grid .cna-work-label:nth-child(1),
+.cna-work-grid .cna-work-body:nth-child(2) {
+  border-top: none;
+}
+
+.cna-screen-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.cna-compare-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.cna-compare-card {
+  padding-top: 28px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.cna-compare-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid #d8dde5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4f5b6b;
+  margin-bottom: 12px;
+}
+
+.cna-compare-card h3 {
+  font-size: 22px;
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.cna-screen-card {
+  padding: 28px 0 0;
+  border-top: 1px solid #e5e7eb;
+  background: transparent;
+}
+
+.cna-screen-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.cna-screen-type {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid #d8dde5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4f5b6b;
+}
+
+.cna-screen-card h3 {
+  font-size: 21px;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.cna-screen-card .cs-caption {
+  margin-bottom: 0;
+}
+
+.cna-state-problem,
+.cna-state-before {
+  position: relative;
+}
+
+.cna-state-problem {
+  border-top-color: #e5e7eb;
+}
+
+.cna-state-before {
+  border-top-color: #e5e7eb;
+}
+
+.cna-state-after {
+  border-top-color: #e5e7eb;
+}
+
+.cna-state-problem .cna-screen-type {
+  border-color: #d6b1b1;
+  color: #7f2f2f;
+  background: rgba(176, 66, 66, 0.04);
+}
+
+.cna-state-before .cna-compare-label {
+  border-color: #d6b1b1;
+  color: #7f2f2f;
+  background: rgba(176, 66, 66, 0.04);
+}
+
+.cna-state-after .cna-compare-label {
+  border-color: #b7d4c1;
+  color: #255b78;
+  background: rgba(61, 126, 165, 0.06);
+}
+
+.cna-screen-card .cs-image {
+  margin-bottom: 16px;
+}
+
+/* ============================================
    Experiment Card Preview (canvas hero)
    ============================================ */
 
@@ -647,6 +1171,7 @@ img {
 
 .contact-heading {
   font-size: clamp(28px, 3.5vw, 40px);
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 300;
   line-height: 1.25;
   color: #c0c0c0;
@@ -666,12 +1191,15 @@ img {
 
 .contact-label {
   font-size: 14px;
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
   color: #999;
   margin-bottom: 8px;
 }
 
 .contact-value {
   font-size: 20px;
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
   line-height: 1.5;
 }
@@ -748,6 +1276,11 @@ img {
     padding: 48px 24px;
   }
 
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
   .skills-grid {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -764,6 +1297,81 @@ img {
 
   .cs-impact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cna-hero {
+    padding-bottom: 28px;
+  }
+
+  .cna-summary,
+  .cna-compare-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cna-problem-visual,
+  .cna-decision-media,
+  .cna-impact-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .cna-problem-stat {
+    padding-right: 0;
+    border-right: none;
+    border-bottom: 1px solid #eef1f5;
+  }
+
+  .cna-problem-stat:last-child {
+    border-bottom: none;
+  }
+
+  .cna-impact-story-item {
+    padding-right: 0;
+    border-bottom: 1px solid #eef1f5;
+  }
+
+  .cna-impact-story-item:last-child {
+    border-bottom: none;
+  }
+
+  .cna-summary-card {
+    border-right: none;
+    padding-right: 0;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .cna-summary-card:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .cna-work-grid {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .cna-work-label,
+  .cna-work-body {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .cna-work-row {
+    display: block;
+    padding-top: 16px;
+    border-top: 1px solid #f0f2f5;
+  }
+
+  .cna-work-row:first-child {
+    border-top: none;
+  }
+
+  .cna-work-label {
+    margin-bottom: 6px;
+  }
+
+  .cna-screen-card {
+    padding-top: 22px;
   }
 
   .project-card-image {
